@@ -40,4 +40,6 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - [expo reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/)
   - Objetivo: Animações em thread do usuário
   - Comando utilizado: ```npx expo install react-native-reanimated```
+  - Observação: alterado [babel.config](babel.config.js) para isnerrir plugin
+  - Recomendação: após a instalação executar com --clear
   - Instalado em: 18/06/2025
