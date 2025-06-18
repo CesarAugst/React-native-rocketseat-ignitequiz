@@ -14,6 +14,8 @@ import
 
   } from 'react-native-reanimated';
 
+const PressableAnimated = Animated.createAnimatedComponent(Pressable);
+
 const TYPE_COLORS = {
   EASY: THEME.COLORS.BRAND_LIGHT,
   HARD: THEME.COLORS.DANGER_LIGHT,
@@ -65,22 +67,15 @@ export function Level({ title, type = 'EASY', isChecked = false, ...rest }: Prop
     checked.value = withTiming(isChecked ? 1 : 0);
   }, [isChecked]);
   return (
-    <Pressable onPressIn={onPressIn} onPressOut={onPressOut} {...rest}>
-      <Animated.View style={
-        [
-          styles.container,
-          animatedContainerStyle,
-          { borderColor: COLOR }
-        ]
-      }>
-        <Animated.Text style={
-          [
-            styles.title,
-            animatedTextStyle
-          ]}>
-          {title}
-        </Animated.Text>
-      </Animated.View>
-    </Pressable>
+    <PressableAnimated
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        style={[ styles.container, animatedContainerStyle, { borderColor: COLOR } ]}
+        {...rest}
+    >
+      <Animated.Text style={[ styles.title, animatedTextStyle ]}>
+        {title}
+      </Animated.Text>
+    </PressableAnimated>
   );
 }
