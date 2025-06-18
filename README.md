@@ -37,4 +37,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 <!--END_SECTION:footer-->
 
 # Instalações adicionais realizadas
-
+- [expo reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/)
+  - Objetivo: Animações em thread do usuário
+  - Comando utilizado: ```npx expo install react-native-reanimated```
+  - Instalado em: 18/06/2025
