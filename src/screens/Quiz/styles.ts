@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   header:{
-    paddingLeft: 50,
     marginBottom: 21,
+    width: '100%',
   }
 });

@@ -19,11 +19,11 @@ import Animated, {
   useAnimatedStyle,
   useSharedValue,
   withSequence,
-  withTiming
+  withTiming,
+  Extrapolate
 } from "react-native-reanimated";
 import {ProgressBar} from "../../components/ProgressBar";
 import {THEME} from "../../styles/theme";
-import Extrapolate = module
 
 interface Params {
   id: string;
@@ -141,14 +141,13 @@ export function Quiz() {
       left: '-5%',
       opacity: interpolate(scrollY.value, [50,90], [0, 1], Extrapolate.CLAMP),
       transform: [
-         { translateY: interpolate(scrollY.value, [50,100], [-40, -30], Extrapolate.CLAMP)}
+         { translateY: interpolate(scrollY.value, [50,100], [-40, 0], Extrapolate.CLAMP)}
       ]
     }
   })
 
   const headerStyles = useAnimatedStyle(() =>{
     return{
-      paddingTop: 20,
       opacity: interpolate(scrollY.value, [60, 100], [1, 0], Extrapolate.CLAMP),
     }
   })
@@ -181,11 +180,13 @@ export function Quiz() {
         onScroll={scrollHandler}
         scrollEventThrottle={16}
       >
-        <QuizHeader
-          title={quiz.title}
-          currentQuestion={currentQuestion + 1}
-          totalOfQuestions={quiz.questions.length}
-        />
+        <Animated.View style={[styles.header, headerStyles]}>
+          <QuizHeader
+            title={quiz.title}
+            currentQuestion={currentQuestion + 1}
+            totalOfQuestions={quiz.questions.length}
+          />
+          </Animated.View>
 
         <Animated.View style={shakeStyleAnimated}>
           <Question
