@@ -20,7 +20,8 @@ import Animated, {
   useSharedValue,
   withSequence,
   withTiming,
-  Extrapolate
+  Extrapolate,
+  runOnJS
 } from "react-native-reanimated";
 import {ProgressBar} from "../../components/ProgressBar";
 import {THEME} from "../../styles/theme";
@@ -33,6 +34,8 @@ interface Params {
 }
 
 const CARD_INCLINATION = 10;
+const CARD_SKIP_AREA = (-200);
+
 type QuizProps = typeof QUIZ[0];
 
 export function Quiz() {
@@ -173,7 +176,10 @@ export function Quiz() {
         const moveToLeft = event.translationX < 0;
         if(moveToLeft)cardPosition.value = (event.translationX)
       })
-      .onEnd(() => {
+      .onEnd((event) => {
+        if(event.translationX < CARD_SKIP_AREA){
+          runOnJS(handleSkipConfirm)()
+        }
         cardPosition.value = withTiming(0);
       });
 
