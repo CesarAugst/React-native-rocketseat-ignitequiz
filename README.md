@@ -43,3 +43,13 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
   - Observação: alterado [babel.config](babel.config.js) para isnerrir plugin
   - Recomendação: após a instalação executar com --clear
   - Instalado em: 18/06/2025
+
+- [react-native-gesture-handler](https://docs.swmansion.com/react-native-gesture-handler/docs/fundamentals/installation)
+  - Objetivo: interagir com as possíveis microinterassões do usuário
+  - Comando utilizad: ```npx expo install react-native-gesture-handler```
+  - Instalado em: 23/06/2025
+
+- [expo skia](https://docs.expo.dev/versions/latest/sdk/skia/)
+  - Objetivo: Criação e manipulação de componentes visuais
+  - Comando utilizado: ```npx expo install @shopify/react-native-skia```
+  - Instalado em: 24/06/2025
