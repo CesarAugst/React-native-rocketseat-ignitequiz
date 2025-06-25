@@ -40,7 +40,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 - [expo reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/)
   - Objetivo: Animações em thread do usuário
   - Comando utilizado: ```npx expo install react-native-reanimated```
-  - Observação: alterado [babel.config](babel.config.js) para isnerrir plugin
+  - Observação: alterado [babel.config](babel.config.js) para inserir plugin
   - Recomendação: após a instalação executar com --clear
   - Instalado em: 18/06/2025
 
@@ -53,3 +53,14 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
   - Objetivo: Criação e manipulação de componentes visuais
   - Comando utilizado: ```npx expo install @shopify/react-native-skia```
   - Instalado em: 24/06/2025
+
+- [react-native-svg](https://docs.expo.dev/versions/latest/sdk/svg/)
+  - Objetivo: Manipulação de SVG como componente
+  - Comando utilizado: ```npx expo install react-native-svg```
+  - Instalado em: 25/06/2025
+
+- [react-native-svg-transformer](https://github.com/kristerkari/react-native-svg-transformer)
+  - Objetivo: Interagir com a componentização e manipulação de SGV
+  - Comando utilizado: ```npm install --save-dev react-native-svg-transformer```
+  - Observação: configurações disponíveis em [metro.config.js](metro.config.js) para inserir plugin
+  - Instalado em: 25/06/2025
