@@ -15,38 +15,57 @@ Aplicativo desenvolvido durante a trilha de React Native da Rocketseat, com o ob
 
 ## 📸 **Pré-visualização do App**
 
-Animações sutis em componentes importantes de listagem:
-- Na primeira imagem os filtros possuem feedback visual aprimorada com o toque, e a listagem das opções é remontada de forma visualmente sequencial
-- Na segunda imagem as microinterações aprimoram a experiencia do usuário (UX) permitindo que ejam removidos da lista ao arrastar para o lado, e o reposicionamento dos elementos também é aprimorado visualmente com animação com efeito de "mola"
+## 📸 **Pré-visualização do App**
+
+A seguir, você confere algumas animações e microinterações implementadas no app. Elas foram projetadas para proporcionar uma experiência mais fluida, intuitiva e envolvente ao usuário.
+
+---
+
+### 🎯 **Animações em filtros e listagens**
+
+- **À esquerda:** os filtros contam com feedback visual ao toque e exibem as opções de forma animada e sequencial.
+- **À direita:** ao arrastar um item da lista, ele pode ser removido com uma animação suave, e os demais elementos se reposicionam com um efeito de mola que reforça a ação do usuário.
+
 <p align="center">
   <img src="./assets/1-filtro_e_lista.gif" alt="Demonstração de filtro e listagem principal" width="45%"/>
   <img src="./assets/2-excluir_reposicionar.gif" alt="Demonstração de exclusão e reposicionamento na listagem" width="45%"/>
 </p>
 
-Animações em ações que tornam a experiencia mais interessante
-- Na primeira imagem, ao acessar a pergunta ela tem efeito de carta rotacionando para a tela
-- Na segunda imagem a seleção das alternativas possui feedback visual totalmente personalizado e a barra de progresso acompanha o scroll 
+---
+
+### 🧠 **Animações nas perguntas e alternativas**
+
+- **À esquerda:** ao acessar uma nova pergunta, ela aparece com um efeito de rotação estilo “flip card”.
+- **À direita:** a seleção de alternativas conta com feedback visual personalizado, e a barra de progresso se anima conforme o avanço no quiz.
+
 <p align="center">
   <img src="./assets/3-entrando_selecionando.gif" alt="Demonstração de interação com alternativas e barra de progresso" width="45%"/>
-  <img src="./assets/3.1-selecionando-barra-de-progresso.gif" alt="Demonstração de exclusão e reposicionamento na listagem" width="45%"/>
+  <img src="./assets/3.1-selecionando-barra-de-progresso.gif" alt="Demonstração de progresso e seleção de alternativas" width="45%"/>
 </p>
 
-Animações de contexto que aprimoram a usabilidade principal
-- Na primeira imagem mostra o feedback ao acertar: todo o fundo com efeito verde, e som de estrela (visual e sonoro)
-- Na segunda imagem mostra o feedback ao errar: todo o fundo com efeito vermelho, som de trombeta e dispositivo vibra (visual, sonoro e tátil)
-- Na terceira imagem mostra o feedback ao pular: microinteração ao arrastar para a esquerda, pula para a proxima questão
-- Na quarta imagem mostra o feedback ao finalizar o quiz troféu com efeito de mola e estrelas piscando em ritmo diferente
+---
+
+### ✅ **Feedbacks visuais, sonoros e táteis**
+
+- **À esquerda:** ao acertar uma pergunta, o fundo é preenchido em verde e um som de estrela é reproduzido.
+- **À direita:** ao errar, o fundo fica vermelho, o som de trombeta é executado e o dispositivo vibra.
+
 <p align="center">
-  <img src="./assets/4-acerto.gif" alt="Demonstração de alternativa correta" width="45%"/>
-  <img src="./assets/5-erro.gif" alt="Demonstração de alternativa errada" width="45%"/>
+  <img src="./assets/4-acerto.gif" alt="Feedback ao acertar a pergunta" width="45%"/>
+  <img src="./assets/5-erro.gif" alt="Feedback ao errar a pergunta" width="45%"/>
 </p>
+
+---
+
+### ⏭️ **Ações adicionais no quiz**
+
+- **À esquerda:** o usuário pode “pular” a pergunta arrastando lateralmente, com uma microanimação reforçando a ação.
+- **À direita:** ao finalizar o quiz, uma animação de troféu com efeito de mola e estrelas piscando celebra a conclusão da jornada.
+
 <p align="center">
-  <img src="./assets/6-pular.gif" alt="Demonstração de pular a alternativa" width="45%"/>
-  <img src="./assets/7-trofeu.gif" alt="Demonstração de finalizar o quiz" width="45%"/>
+  <img src="./assets/6-pular.gif" alt="Ação de pular a pergunta" width="45%"/>
+  <img src="./assets/7-trofeu.gif" alt="Tela final com troféu animado" width="45%"/>
 </p>
-
-
-
 
 ## 🚀 Tecnologias e Bibliotecas Utilizadas
 
