@@ -13,6 +13,41 @@
 
 Aplicativo desenvolvido durante a trilha de React Native da Rocketseat, com o objetivo de criar uma experiência interativa de quiz, utilizando recursos avançados de animação, gestos e feedback visual. O projeto explora integração com SVGs, animações em thread nativa, manipulação de áudio e respostas táteis.
 
+## 📸 **Pré-visualização do App**
+
+Animações sutis em componentes importantes de listagem:
+- Na primeira imagem os filtros possuem feedback visual aprimorada com o toque, e a listagem das opções é remontada de forma visualmente sequencial
+- Na segunda imagem as microinterações aprimoram a experiencia do usuário (UX) permitindo que ejam removidos da lista ao arrastar para o lado, e o reposicionamento dos elementos também é aprimorado visualmente com animação com efeito de "mola"
+<p align="center">
+  <img src="./assets/1-filtro_e_lista.gif" alt="Demonstração de filtro e listagem principal" width="45%"/>
+  <img src="./assets/2-excluir_reposicionar.gif" alt="Demonstração de exclusão e reposicionamento na listagem" width="45%"/>
+</p>
+
+Animações em ações que tornam a experiencia mais interessante
+- Na primeira imagem, ao acessar a pergunta ela tem efeito de carta rotacionando para a tela
+- Na segunda imagem a seleção das alternativas possui feedback visual totalmente personalizado e a barra de progresso acompanha o scroll 
+<p align="center">
+  <img src="./assets/3-entrando_selecionando.gif" alt="Demonstração de interação com alternativas e barra de progresso" width="45%"/>
+  <img src="./assets/3.1-selecionando-barra-de-progresso.gif" alt="Demonstração de exclusão e reposicionamento na listagem" width="45%"/>
+</p>
+
+Animações de contexto que aprimoram a usabilidade principal
+- Na primeira imagem mostra o feedback ao acertar: todo o fundo com efeito verde, e som de estrela (visual e sonoro)
+- Na segunda imagem mostra o feedback ao errar: todo o fundo com efeito vermelho, som de trombeta e dispositivo vibra (visual, sonoro e tátil)
+- Na terceira imagem mostra o feedback ao pular: microinteração ao arrastar para a esquerda, pula para a proxima questão
+- Na quarta imagem mostra o feedback ao finalizar o quiz troféu com efeito de mola e estrelas piscando em ritmo diferente
+<p align="center">
+  <img src="./assets/4-acerto.gif" alt="Demonstração de alternativa correta" width="45%"/>
+  <img src="./assets/5-erro.gif" alt="Demonstração de alternativa errada" width="45%"/>
+</p>
+<p align="center">
+  <img src="./assets/6-pular.gif" alt="Demonstração de pular a alternativa" width="45%"/>
+  <img src="./assets/7-trofeu.gif" alt="Demonstração de finalizar o quiz" width="45%"/>
+</p>
+
+
+
+
 ## 🚀 Tecnologias e Bibliotecas Utilizadas
 
 ### ✨ Animações e Interações
