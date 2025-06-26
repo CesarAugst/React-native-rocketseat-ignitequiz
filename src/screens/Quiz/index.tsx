@@ -28,7 +28,8 @@ import {THEME} from "../../styles/theme";
 import {GestureDetector, Gesture} from "react-native-gesture-handler";
 import {OverlayFeedback} from "../../components/OverlayFeedback";
 
-'react-native-gesture-handler';
+import { Audio } from 'expo-av';
+import * as Hapics from 'expo-haptics';
 
 interface Params {
   id: string;
@@ -56,6 +57,16 @@ export function Quiz() {
 
   const route = useRoute();
   const { id } = route.params as Params;
+
+  async function playSound(isCorrect: boolean){
+    const file = isCorrect ? require("../../assets/correct.mp3") : require("../../assets/wrong.mp3");
+
+    const {sound} = await Audio.Sound.createAsync(file, {shouldPlay: true})
+
+    await sound.setPositionAsync(0);
+    await sound.playAsync();
+
+  }
 
   function handleSkipConfirm() {
     Alert.alert('Pular', 'Deseja realmente pular a questão?', [
@@ -96,9 +107,11 @@ export function Quiz() {
       setStatusReply(1)
       setPoints(prevState => prevState + 1);
       handleNextQuestion();
+      await playSound(true);
     }else{
       setStatusReply(2)
       shakeAnimation()
+      await playSound(false);
     }
     setAlternativeSelected(null);
   }
@@ -119,7 +132,9 @@ export function Quiz() {
     return true;
   }
 
-  function shakeAnimation(){
+  async function shakeAnimation(){
+    await Hapics.notificationAsync(Hapics.NotificationFeedbackType.Error);
+
     shake.value = withSequence(
         withTiming(3, {duration: 400, easing: Easing.bounce}),
         withTiming(0, undefined, (finished) => {

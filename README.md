@@ -64,3 +64,13 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
   - Comando utilizado: ```npm install --save-dev react-native-svg-transformer```
   - Observação: configurações disponíveis em [metro.config.js](metro.config.js) para inserir plugin
   - Instalado em: 25/06/2025
+
+- [expo-av](https://docs.expo.dev/versions/latest/sdk/av/)
+  - Objetivo: interação sonora com o usuário
+  - Comando utilizado: ```npx expo install expo-av```
+  - Instalação: 26/06/2025
+
+- [haptics](https://www.npmjs.com/package/expo-haptics)
+  - Objetivo: Interação com usuário vibrando o dispositivo
+  - Comando utilizado: ```npx expo install expo-haptics```
+  - Instalação: 26/06/2025
