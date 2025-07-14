@@ -15,8 +15,6 @@ Aplicativo desenvolvido durante a trilha de React Native da Rocketseat, com o ob
 
 ## 📸 **Pré-visualização do App**
 
-## 📸 **Pré-visualização do App**
-
 A seguir, você confere algumas animações e microinterações implementadas no app. Elas foram projetadas para proporcionar uma experiência mais fluida, intuitiva e envolvente ao usuário.
 
 ---
